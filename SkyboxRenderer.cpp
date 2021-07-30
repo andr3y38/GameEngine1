@@ -35,17 +35,16 @@ namespace GE {
 		CubeVertex(SIDE,  SIDE, -SIDE),
 		CubeVertex(-SIDE, SIDE, -SIDE),
 
-		// Back face
-		CubeVertex(-SIDE,  SIDE, SIDE),
+	/*	// Back face
+	    CubeVertex(-SIDE,  SIDE, SIDE),
 		CubeVertex(-SIDE, -SIDE, SIDE),
 		CubeVertex(SIDE, -SIDE, SIDE),
 
 		CubeVertex(SIDE, -SIDE, SIDE),
 		CubeVertex(SIDE,  SIDE, SIDE),
-		CubeVertex(-SIDE, SIDE, SIDE),
-
-		// Left face
-		CubeVertex(-SIDE, -SIDE, SIDE),
+		CubeVertex(-SIDE, SIDE, SIDE),*/
+// Left face
+		 /*CubeVertex(-SIDE, -SIDE, SIDE),
 		CubeVertex(-SIDE,  SIDE, SIDE),
 		CubeVertex(-SIDE,  SIDE, -SIDE),
 
@@ -53,6 +52,7 @@ namespace GE {
 		CubeVertex(-SIDE, -SIDE, -SIDE),
 		CubeVertex(-SIDE, -SIDE,  SIDE),
 
+		 */
 		// Right face
 		CubeVertex(SIDE, -SIDE, SIDE),
 		CubeVertex(SIDE,  SIDE, SIDE),
@@ -61,7 +61,7 @@ namespace GE {
 		CubeVertex(SIDE,  SIDE, -SIDE),
 		CubeVertex(SIDE, -SIDE, -SIDE),
 		CubeVertex(SIDE, -SIDE,  SIDE),
-
+ 
 		// Top face
 		CubeVertex(-SIDE, SIDE,  SIDE),
 		CubeVertex(SIDE, SIDE,  SIDE),
@@ -78,7 +78,7 @@ namespace GE {
 
 		CubeVertex(SIDE, -SIDE, -SIDE),
 		CubeVertex(-SIDE, -SIDE, -SIDE),
-		CubeVertex(-SIDE, -SIDE,  SIDE),
+		CubeVertex(-SIDE, -SIDE,  SIDE), 
 	};
 
 	void SkyboxRenderer::createCubemap(std::vector<std::string> filenames) {
